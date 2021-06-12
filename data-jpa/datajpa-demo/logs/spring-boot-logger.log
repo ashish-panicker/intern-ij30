@@ -1,0 +1,236 @@
+2021-06-11 12:09:15,259 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DatajpaDemoApplication on blackbox with PID 19628 (D:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo\target\classes started by Ashis in D:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo)
+2021-06-11 12:09:15,264 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-06-11 12:09:15,267 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-06-11 12:09:15,310 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-11 12:09:15,313 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-11 12:09:15,806 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 12:09:15,862 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 40ms. Found 1 JPA repository interfaces.
+2021-06-11 12:09:16,571 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9200 (http)
+2021-06-11 12:09:16,583 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:09:16,586 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-06-11 12:09:16,588 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 12:09:16,706 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-06-11 12:09:16,709 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1393 ms
+2021-06-11 12:09:16,884 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 12:09:16,921 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-11 12:09:17,030 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-11 12:09:17,112 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-06-11 12:09:17,391 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-06-11 12:09:17,405 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-11 12:09:17,855 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 12:09:17,864 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 12:09:17,878 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-06-11 12:09:18,092 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 12:09:18,188 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-11 12:09:18,344 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:09:18,363 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9200 (http) with context path '/jpa-demo'
+2021-06-11 12:09:18,372 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DatajpaDemoApplication in 3.405 seconds (JVM running for 4.055)
+2021-06-11 12:09:18,375 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] inside the createDummyAuthors() CommandLineRunner...
+2021-06-11 12:09:18,377 DEBUG com.example.datajpa.DatajpaDemoApplication [restartedMain] Creating new authors...
+2021-06-11 12:09:18,403 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:09:18,409 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:09:18,436 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:09:18,440 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Fiction]
+2021-06-11 12:09:18,443 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Enid Blyton]
+2021-06-11 12:09:18,445 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [13]
+2021-06-11 12:09:18,455 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=13, name=Enid Blyton, genre=Fiction)
+2021-06-11 12:09:18,458 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:09:18,460 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:09:18,464 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:09:18,467 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Science Fiction]
+2021-06-11 12:09:18,468 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Eric nylund]
+2021-06-11 12:09:18,469 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [14]
+2021-06-11 12:09:18,475 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=14, name=Eric nylund, genre=Science Fiction)
+2021-06-11 12:09:18,477 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] fetcching all authors...
+2021-06-11 12:09:18,582 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_, author0_.genre as genre2_0_, author0_.name as name3_0_ from authors author0_
+2021-06-11 12:09:18,594 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author: Author(id=7, name=Enid Blyton, genre=Fiction)
+2021-06-11 12:09:18,597 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author: Author(id=8, name=Eric nylund, genre=Science Fiction)
+2021-06-11 12:09:18,598 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author: Author(id=13, name=Enid Blyton, genre=Fiction)
+2021-06-11 12:09:18,600 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author: Author(id=14, name=Eric nylund, genre=Science Fiction)
+2021-06-11 12:09:18,602 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] deleting all authors...
+2021-06-11 12:09:18,608 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:09:18,611 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [13]
+2021-06-11 12:09:18,618 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:09:18,620 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [13]
+2021-06-11 12:09:18,629 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:09:18,632 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [13]
+2021-06-11 12:09:18,641 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:09:18,644 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [14]
+2021-06-11 12:09:18,651 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:09:18,653 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [14]
+2021-06-11 12:09:18,656 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:09:18,657 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [14]
+2021-06-11 12:09:32,615 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-11 12:09:32,617 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 12:09:32,621 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-06-11 12:09:32,634 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-06-11 12:21:41,334 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DatajpaDemoApplication on blackbox with PID 21412 (D:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo\target\classes started by Ashis in d:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo)
+2021-06-11 12:21:41,337 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-06-11 12:21:41,338 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-06-11 12:21:41,393 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-11 12:21:41,393 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-11 12:21:42,132 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 12:21:42,225 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+2021-06-11 12:21:42,988 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9200 (http)
+2021-06-11 12:21:43,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:21:43,003 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-06-11 12:21:43,004 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 12:21:43,128 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-06-11 12:21:43,128 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1734 ms
+2021-06-11 12:21:43,389 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 12:21:43,442 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-11 12:21:43,610 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-11 12:21:43,717 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-06-11 12:21:44,054 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-06-11 12:21:44,072 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-11 12:21:44,736 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 12:21:44,745 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 12:21:44,782 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-06-11 12:21:45,211 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 12:21:45,333 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-11 12:21:45,556 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:21:45,584 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9200 (http) with context path '/jpa-demo'
+2021-06-11 12:21:45,594 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DatajpaDemoApplication in 4.574 seconds (JVM running for 5.838)
+2021-06-11 12:21:45,597 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] inside the createDummyAuthors() CommandLineRunner...
+2021-06-11 12:21:45,597 DEBUG com.example.datajpa.DatajpaDemoApplication [restartedMain] Creating new authors...
+2021-06-11 12:21:45,623 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:21:45,629 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:21:45,659 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:21:45,662 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Fiction]
+2021-06-11 12:21:45,663 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Enid Blyton]
+2021-06-11 12:21:45,664 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [15]
+2021-06-11 12:21:45,674 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=15, name=Enid Blyton, genre=Fiction)
+2021-06-11 12:21:45,676 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:21:45,677 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:21:45,681 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:21:45,682 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Science Fiction]
+2021-06-11 12:21:45,682 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Eric nylund]
+2021-06-11 12:21:45,682 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [16]
+2021-06-11 12:21:45,687 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=16, name=Eric nylund, genre=Science Fiction)
+2021-06-11 12:21:45,689 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:21:45,690 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:21:45,694 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:21:45,694 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Contemperory]
+2021-06-11 12:21:45,695 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Larry pressler]
+2021-06-11 12:21:45,695 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [17]
+2021-06-11 12:21:45,698 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=17, name=Larry pressler, genre=Contemperory)
+2021-06-11 12:21:45,700 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:21:45,701 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:21:45,705 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:21:45,706 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:21:45,706 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Margaret Atwood]
+2021-06-11 12:21:45,706 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [18]
+2021-06-11 12:21:45,709 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=18, name=Margaret Atwood, genre=Victorian Fiction)
+2021-06-11 12:21:45,711 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:21:45,712 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:21:45,717 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:21:45,717 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:21:45,718 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Emily Bronte]
+2021-06-11 12:21:45,718 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [19]
+2021-06-11 12:21:45,721 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=19, name=Emily Bronte, genre=Victorian Fiction)
+2021-06-11 12:21:45,722 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] finding all by genre
+2021-06-11 12:21:45,865 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_, author0_.genre as genre2_0_, author0_.name as name3_0_ from authors author0_ where author0_.genre=?
+2021-06-11 12:21:45,866 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:21:45,880 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author(id=18, name=Margaret Atwood, genre=Victorian Fiction)
+2021-06-11 12:21:45,880 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author(id=19, name=Emily Bronte, genre=Victorian Fiction)
+2021-06-11 12:21:45,880 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] deleting all authors...
+2021-06-11 12:21:45,891 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,892 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [15]
+2021-06-11 12:21:45,898 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,899 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [15]
+2021-06-11 12:21:45,908 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:21:45,909 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [15]
+2021-06-11 12:21:45,917 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,917 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [16]
+2021-06-11 12:21:45,921 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,922 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [16]
+2021-06-11 12:21:45,924 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:21:45,925 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [16]
+2021-06-11 12:21:45,930 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,931 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [17]
+2021-06-11 12:21:45,935 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,936 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [17]
+2021-06-11 12:21:45,938 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:21:45,939 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [17]
+2021-06-11 12:21:45,945 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,946 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [18]
+2021-06-11 12:21:45,949 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,950 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [18]
+2021-06-11 12:21:45,952 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:21:45,952 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [18]
+2021-06-11 12:21:45,957 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,957 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [19]
+2021-06-11 12:21:45,960 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_0_, author0_.genre as genre2_0_0_, author0_.name as name3_0_0_ from authors author0_ where author0_.id=?
+2021-06-11 12:21:45,961 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [19]
+2021-06-11 12:21:45,963 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] delete from authors where id=?
+2021-06-11 12:21:45,963 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [INTEGER] - [19]
+2021-06-11 12:22:17,611 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-4] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-11 12:22:17,612 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-4] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 12:22:17,616 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown initiated...
+2021-06-11 12:22:17,631 INFO com.zaxxer.hikari.HikariDataSource [Thread-4] HikariPool-1 - Shutdown completed.
+2021-06-11 12:22:17,727 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DatajpaDemoApplication on blackbox with PID 21412 (D:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo\target\classes started by Ashis in d:\work\CTS\INTCDE21IJ030\data-jpa\datajpa-demo)
+2021-06-11 12:22:17,727 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.12.RELEASE, Spring v5.2.15.RELEASE
+2021-06-11 12:22:17,728 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-06-11 12:22:18,000 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 12:22:18,008 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2021-06-11 12:22:18,133 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9200 (http)
+2021-06-11 12:22:18,134 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:22:18,135 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-06-11 12:22:18,135 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 12:22:18,171 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-06-11 12:22:18,172 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 440 ms
+2021-06-11 12:22:18,258 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 12:22:18,266 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-06-11 12:22:18,295 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-06-11 12:22:18,296 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-11 12:22:18,325 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 12:22:18,325 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 12:22:18,339 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-06-11 12:22:18,422 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 12:22:18,475 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-11 12:22:18,562 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9200"]
+2021-06-11 12:22:18,569 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9200 (http) with context path '/jpa-demo'
+2021-06-11 12:22:18,576 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DatajpaDemoApplication in 0.886 seconds (JVM running for 38.82)
+2021-06-11 12:22:18,578 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] inside the createDummyAuthors() CommandLineRunner...
+2021-06-11 12:22:18,579 DEBUG com.example.datajpa.DatajpaDemoApplication [restartedMain] Creating new authors...
+2021-06-11 12:22:18,588 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:22:18,589 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:22:18,597 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:22:18,599 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Fiction]
+2021-06-11 12:22:18,599 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Enid Blyton]
+2021-06-11 12:22:18,599 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [20]
+2021-06-11 12:22:18,604 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=20, name=Enid Blyton, genre=Fiction)
+2021-06-11 12:22:18,605 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:22:18,607 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:22:18,611 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:22:18,611 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Science Fiction]
+2021-06-11 12:22:18,612 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Eric nylund]
+2021-06-11 12:22:18,612 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [21]
+2021-06-11 12:22:18,616 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=21, name=Eric nylund, genre=Science Fiction)
+2021-06-11 12:22:18,617 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:22:18,619 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:22:18,623 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:22:18,624 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Contemperory]
+2021-06-11 12:22:18,625 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Larry pressler]
+2021-06-11 12:22:18,625 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [22]
+2021-06-11 12:22:18,629 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=22, name=Larry pressler, genre=Contemperory)
+2021-06-11 12:22:18,630 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:22:18,631 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:22:18,635 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:22:18,636 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:22:18,636 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Margaret Atwood]
+2021-06-11 12:22:18,636 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [23]
+2021-06-11 12:22:18,639 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=23, name=Margaret Atwood, genre=Victorian Fiction)
+2021-06-11 12:22:18,641 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select next_val as id_val from hibernate_sequence for update
+2021-06-11 12:22:18,642 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] update hibernate_sequence set next_val= ? where next_val=?
+2021-06-11 12:22:18,646 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] insert into authors (genre, name, id) values (?, ?, ?)
+2021-06-11 12:22:18,646 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:22:18,647 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [2] as [VARCHAR] - [Emily Bronte]
+2021-06-11 12:22:18,647 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [3] as [INTEGER] - [24]
+2021-06-11 12:22:18,650 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] created author Author(id=24, name=Emily Bronte, genre=Victorian Fiction)
+2021-06-11 12:22:18,651 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] finding all by genre
+2021-06-11 12:22:18,677 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] select author0_.id as id1_0_, author0_.genre as genre2_0_, author0_.name as name3_0_ from authors author0_ where author0_.genre=?
+2021-06-11 12:22:18,678 TRACE org.hibernate.type.descriptor.sql.BasicBinder [restartedMain] binding parameter [1] as [VARCHAR] - [Victorian Fiction]
+2021-06-11 12:22:18,682 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author(id=23, name=Margaret Atwood, genre=Victorian Fiction)
+2021-06-11 12:22:18,682 INFO com.example.datajpa.DatajpaDemoApplication [restartedMain] Author(id=24, name=Emily Bronte, genre=Victorian Fiction)
+2021-06-11 12:22:18,683 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

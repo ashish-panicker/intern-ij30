@@ -1,0 +1,14 @@
+.task > p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reminder {
+    border-left: 3px solid green;
+}
+
+.task {
+    cursor: pointer;
+    padding: 0px 5px;
+}

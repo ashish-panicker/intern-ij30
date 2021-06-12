@@ -1,4 +1,4 @@
-package com.demo.jpa.model;
+package com.example.datajpa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,31 +13,25 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "employees")
-
+@Table(name = "authors")
 @Getter
 @Setter
-@ToString
-@NoArgsConstructor
 @AllArgsConstructor
-public class Employee {
+@NoArgsConstructor
+@ToString
+public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer employeeId;
+    private Integer id;
 
-    private String firstName;
+    private String name;
 
-    private String lastName;
+    private String genre;
 
-    private String email;
-
-   
-    public Employee(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+    public Author(String name, String genre) {
+        this.genre = genre;
+        this.name = name;
     }
-
 
 }
