@@ -29,6 +29,8 @@ public class Author {
 
     private String genre;
 
+    private String author_awards_list;
+
     public Author(String name, String genre) {
         this.genre = genre;
         this.name = name;

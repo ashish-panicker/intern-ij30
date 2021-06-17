@@ -1,6 +1,9 @@
-<div class="task" [ngClass]="{'reminder': task.reminder}">
+<div class="task" [ngClass]="{'reminder': task.reminder}"
+    (dblclick)="onDoubleClick(task)">
     <h5> {{task.text}} </h5>
     <p> {{task.day}}
-        <a href="#" class="text-danger">delete</a>
+        <a  class="text-danger" 
+            (click)="onDelete(task)" 
+            >delete</a>
     </p>
 </div>

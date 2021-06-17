@@ -1,0 +1,29 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="taskForm">
+    <div class="form-group">
+        <label for="task">Task</label>
+        <input type="text" name="task" id="task" class="form-control" 
+            placeholder="Your task" aria-describedby="helpId" 
+            formControlName="text">
+        <div *ngIf="taskForm.controls.text.invalid 
+                && (taskForm.controls.text.dirty || taskForm.controls.text.touched)"
+            class="text-danger small">Task details cannot be empty.</div>
+    </div>
+    <div class="form-group">
+        <label for="day">Day</label>
+        <input type="text" name="day" id="day" class="form-control" placeholder="Day of the task"
+            aria-describedby="helpId" formControlName="day">
+        <div *ngIf="taskForm.controls.day.invalid 
+                && (taskForm.controls.day.dirty || taskForm.controls.day.touched)"
+            class="text-danger">Task details cannt be empty.</div>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" name="reminder" id="reminder" 
+                value="checkedValue" checked formControlName="reminder">
+            Remind me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary" 
+        [disabled]="taskForm.pristine || taskForm.invalid"
+        >Create Task</button>
+</form>

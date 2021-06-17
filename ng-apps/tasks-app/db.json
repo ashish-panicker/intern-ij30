@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "text": "Angular session #1 for new cohort",
+      "day": "June 30",
+      "reminder": true,
+      "id": 1
+    }
+  ]
+}
