@@ -1,0 +1,19 @@
+GET http://localhost:8080/trainers HTTP/1.1
+###
+
+GET http://localhost:8080/trainers/ HTTP/1.1
+###
+
+GET http://localhost:8080/trainers/1 HTTP/1.1
+###
+
+POST http://localhost:8080/trainers HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Arun R",
+  "email": "arun.r",
+  "technology": "Java FSE"
+}
+###
